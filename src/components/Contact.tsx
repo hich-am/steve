@@ -35,10 +35,14 @@ export const Contact = () => {
 
             <div>
               <p className="font-body text-silver text-xs uppercase tracking-[0.2em] mb-4">Socials</p>
-              <div className="flex gap-8">
-                {['Instagram', 'IMDb', 'Models.com'].map(link => (
-                  <a key={link} href="#" className="font-body text-oat text-sm uppercase tracking-widest hover:text-accent transition-colors">
-                    {link}
+              <div className="flex gap-8 flex-wrap">
+                {[
+                  { name: 'Instagram', url: 'https://www.instagram.com/steventemimi/#' },
+                  { name: 'TikTok', url: 'https://www.tiktok.com/@steventemimi' },
+                  { name: 'Facebook', url: 'https://www.facebook.com/stephentemimi' }
+                ].map(link => (
+                  <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="font-body text-oat text-sm uppercase tracking-widest hover:text-accent transition-colors">
+                    {link.name}
                   </a>
                 ))}
               </div>
