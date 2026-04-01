@@ -1,14 +1,11 @@
 import React from 'react';
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   return (
-    <footer className="bg-oat border-t border-carbon/10 py-12 px-8 flex flex-col md:flex-row justify-between items-center text-carbon font-body text-xs uppercase tracking-widest gap-6">
-      <p className="opacity-60">© 2025 Steven Temimi. All Rights Reserved.</p>
-      <div className="flex gap-8 font-medium">
-        <a href="#" className="hover:opacity-60 transition-opacity">Instagram</a>
-        <a href="#" className="hover:opacity-60 transition-opacity">IMDb</a>
-        <a href="#" className="hover:opacity-60 transition-opacity">Models.com</a>
-      </div>
+    <footer className="bg-carbon py-12 px-8 flex justify-center items-center text-silver font-body text-xs uppercase tracking-widest">
+      <p>
+        Made by <a href="https://heeshvisuals.vercel.app" target="_blank" rel="noopener noreferrer" className="text-oat hover:text-accent transition-colors underline decoration-oat/30 underline-offset-4 hover:decoration-accent">Heesh</a>
+      </p>
     </footer>
   );
 };
